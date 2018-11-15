@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/net-art-and-cultures/final.git"
+    "url": "git+https://github.com/Sheeptipper/poetic_texts.git"
   },
-  "author": "Nick Briz <nickbriz@gmail.com>",
+  "author": "ming zhang <mzhang527@gmail.com>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/net-art-and-cultures/final/issues"
+    "url": "https://github.com/Sheeptipper/poetic_texts/issues"
   },
-  "homepage": "https://github.com/net-art-and-cultures/final#readme",
+  "homepage": "https://github.com/Sheeptipper/poetic_texts#readme",
   "dependencies": {
     "express": "^4.16.4"
   }
