@@ -12,6 +12,8 @@ var markov;
 var accuracy;
 var r, g, b;
 
+
+
 fetch('Nietzsche.txt')
   .then(function(response) {
     return response.text();
@@ -24,21 +26,46 @@ fetch('Nietzsche.txt')
 
   });
 
- function setup() {
-  createCanvas(window.innerWidth, window.innerHeight, P2D);
-  r = random(50, 255);
-  g = random(0, 200);
-  b = random(50, 255);
+  function setup() {
+      createCanvas(window.innerWidth, window.innerHeight);
+      r = random(0, 255);
+      g = random(0, 255);
+      b = random(0, 255);
+  }
+
+  function draw() {
+    background(r,g,b)
+    // put drawing code here
+    fill(r);
+    textSize(50)
+    textAlign(CENTER)
+    //translate teh orgin of the grid to the center of the screen
+    translate(width/2, height/2)
+    // text("lat: " + lat + "\n" + "lon: " + lon, -200, -200, 400,400);
+
+    //set the variable distance to the result of the proximity function
+
+
+    //here, we assemble the text for display
+
+    textToPrint ="I AM " +"" ;
+    textToPrint1 ="I WANT ";
+    textToPrint2 ="I LOVE ";
+
+
+    //here we print the text for display
+    text(textToPrint, -width/2, r, width, height)
+    text(textToPrint1, -width/2, g, width, height)
+    text(textToPrint2, -width/2, b, width, height)
 }
 
-function draw() {
-  background(r, g, b);
-  console.log('draw');
-}
 
-function deviceMoved() {
-    r = random(50, 255);
-    g = random(0, 200);
-    b = random(50, 255);
 
-}
+
+
+  function deviceMoved() {
+      r = random(50, 255);
+      g = random(0, 200);
+      b = random(50, 255);
+
+    }
