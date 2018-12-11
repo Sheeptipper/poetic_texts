@@ -13,6 +13,8 @@ var accuracy;
 var r, g, b;;
 
 var sen = ""
+var sen1 = ""
+var sen2 = ""
 var markovReady = false;
 
 
@@ -55,8 +57,8 @@ fetch('Nietzsche.txt')
         //here, we assemble the text for display
 
         textToPrint ="I AM " + sen ;
-        textToPrint1 ="I WANT " + sen;
-        textToPrint2 ="I LOVE " + sen;
+        textToPrint1 ="I WANT " + sen1;
+        textToPrint2 ="I LOVE " + sen2;
 
 
         //here we print the text for display
@@ -76,9 +78,15 @@ fetch('Nietzsche.txt')
       b = random(0, 255);
       if(markovReady == true) {
           sen = markov.generateSentences(1);
+          sen1 = markov.generateSentences(1);
+          sen2 = markov.generateSentences(1);
+
           //textToPrint = sen
 
           console.log("sen " + sen)
+          console.log("sen1 " + sen1)
+          console.log("sen2 " + sen2)
+
 
     }
 }
