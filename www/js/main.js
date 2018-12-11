@@ -64,8 +64,8 @@ fetch('Nietzsche.txt')
 
 
   function deviceMoved() {
-      r = random(50, 255);
-      g = random(0, 200);
-      b = random(50, 255);
+      r = random(0, 255);
+      g = random(0, 255);
+      b = random(0, 255);
 
     }
